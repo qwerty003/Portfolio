@@ -1,5 +1,5 @@
 import { createMuiTheme, responsiveFontSizes }  from '@material-ui/core/styles';
-import { pink,grey } from '@material-ui/core/colors';
+import { pink,grey,green } from '@material-ui/core/colors';
 
 const theme = responsiveFontSizes(createMuiTheme({
   typography: {
@@ -21,11 +21,61 @@ const theme = responsiveFontSizes(createMuiTheme({
       fontStyle: 'bold',
     },
     h4: {
-      fontSize: '2.2rem',
+      fontSize: '2.1rem',
       fontFamily: 'Open Sans',
     },
     h5: {
-      fontSize: '2.3rem',
+      fontSize: '2.1rem',
+      fontFamily: 'Roboto',
+      fontWeight: 300
+    },
+    body2: {
+      fontSize: '1rem',
+      fontFamily: 'Lato',
+    },
+    subtitle1:{
+      fontSize: '1rem',
+      color: '#544D4D'
+    }
+  },
+  palette: {
+    background: {
+      default: '#E6BBD0'/*light-pink*/
+    },
+    primary: { 
+      main: '#E6BBD0',/*light-pink*/
+      icons: green[50],
+      contrastText: grey[500],
+    },
+    secondary: {
+      main: '#E769A6',/*white*/
+      icons: '#FFFFFF'
+    },
+    text: {
+      primary: '#000000',/*black*/
+      secondary: '#FFFFFF',/*white*/
+    }
+  },
+}));
+
+const theme2 = responsiveFontSizes(createMuiTheme({
+  typography: {
+    fontFamily: [
+      'Roboto',
+    ].join(','),
+    h2: {
+      fontSize: '5rem',
+      fontFamily: 'Raleway',
+    },
+    h3: {
+      fontStyle: 'bold',
+    },
+    h4: {
+      fontSize: '2.1rem',
+      fontFamily: 'Open Sans',
+    },
+    h5: {
+      fontSize: '2.1rem',
       fontFamily: 'Roboto',
       fontWeight: 300
     },
@@ -36,40 +86,21 @@ const theme = responsiveFontSizes(createMuiTheme({
   },
   palette: {
     background: {
-      default: '#E6BBD0'/*light-pink*/
+      default: '#91D3AE',/*light-green*/
     },
     primary: { 
-      main: '#E6BBD0',/*light-pink*/
+      main: '#91D3AE',/*light-green*/
       icons: pink[100],
       contrastText: grey[500],
     },
     secondary: {
-      main: '#FFFFFF',/*purple*/
+      main: '#5DC288',/*dark-green*/
+      icons: '#FFFFFF',/*white*/
     },
     text: {
       primary: '#000000',/*black*/
-      secondary: '#FFFFFF'/*white*/
-    }
-  },
-}));
-const theme2 = responsiveFontSizes(createMuiTheme({
-  typography: {
-    fontFamily: [
-      'Roboto',
-      'Sacramento',
-      'cursive',
-    ].join(','),
-    h2: {
-      fontSize: '4.8rem',
-      fontFamily: 'Allura',
-      fontWeight: 'normal',
+      secondary: '#FFFFFF',/*white*/
     },
-  },
-  palette: {
-    text: {
-      primary: '#E312A6',/*pink*/
-      secondary: '#000000'
-    }
   },
 }));
 
