@@ -6,6 +6,7 @@ const useStyles = makeStyles({
   root: {
     position: 'fixed',
     width: '100%',
+    zIndex: 5,
   },
 });
 
@@ -21,7 +22,7 @@ export default function ProgressBar() {
       const scrolled = document.documentElement.scrollTop;
       //scrollHeight gives total length of the window and clientHeight gives the length of viewport
       const scrollLength = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const progress = `${100*scrolled/scrollLength}`;
+      const progress = 100*scrolled/scrollLength;
 
       setProgress(progress);
     }

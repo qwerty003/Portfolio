@@ -37,16 +37,16 @@ export default function Project(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="md" className={classes.root}>
-                <div className={classes.cardroot}>
-                    <img src={pin} width="6%" style={{ position: 'absolute', zIndex: '1', marginTop: -16 }}></img>   
-                    <Card>
-                        <CardActionArea>
+            <Container maxWidth="md" className={classes.root} style={{transform:"rotate("+props.rotate+"deg)"}}>
+                <div className={classes.cardroot}>   
+                    <Card elevation={10}>
+                    <img src={pin} width="6%" style={{ position: 'absolute', zIndex: '1', marginTop: -10 }}></img>
+                        <CardActionArea href={props.action}>
                             <CardMedia
                                 component="img"
-                                alt="Contemplative Reptile"
+                                alt="Project"
                                 image={props.image}
-                                title="Contemplative Reptile"
+                                title="Project"
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h5">
@@ -57,7 +57,7 @@ export default function Project(props) {
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
-                        <CardActions style={{fontSize:"1.5rem"}}>    
+                        <CardActions style={{fontSize:"3.8vh",color:"gray"}}>    
                             {props.children}
                         </CardActions>
                     </Card>
