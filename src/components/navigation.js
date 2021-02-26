@@ -86,12 +86,12 @@ export default function Navigation(props) {
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="LinkedIn">
-                            <IconButton aria-label="LinkedIn">
+                            <IconButton aria-label="LinkedIn" href="https://www.linkedin.com/in/abhijeet-kumar-955631166">
                                 <LinkedInIcon style={{color:theme.palette.secondary.icons}} />
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Articles">
-                            <IconButton aria-label="Articles">
+                            <IconButton aria-label="Articles" href="https://auth.geeksforgeeks.org/user/abhijeetcatches33/articles">
                                 <TranslateIcon style={{color:theme.palette.secondary.icons}} />
                             </IconButton>
                         </Tooltip>
@@ -114,19 +114,19 @@ export default function Navigation(props) {
                 onClick={() => { handleDrawer() }}>
                 <List>
                     <div>
-                        <ListItem button component="a" href="https://www.github.com/qwerty003">
+                        <ListItem button component="a" href="mailto:abhijeetcatches33@gmail.com">
                             <ListItemIcon>
                                 <MailIcon />
                             </ListItemIcon>
                             <ListItemText primary="Mail" />
                         </ListItem>
-                        <ListItem button>
+                        <ListItem button component="a" href="https://www.linkedin.com/in/abhijeet-kumar-955631166">
                             <ListItemIcon>
                                 <LinkedInIcon />
                             </ListItemIcon>
                             <ListItemText primary="LinkedIn" />
                         </ListItem>
-                        <ListItem button>
+                        <ListItem button component="a" href="https://twitter.com/Abigit03">
                             <ListItemIcon>
                                 <TwitterIcon />
                             </ListItemIcon>
