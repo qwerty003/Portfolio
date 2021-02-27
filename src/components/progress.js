@@ -8,6 +8,12 @@ const useStyles = makeStyles({
     width: '100%',
     zIndex: 5,
   },
+  progbar: {
+    height: '4px',
+    ['@media (max-width:550px)']: {
+      height: '5px',
+    },
+  }
 });
 
 
@@ -36,9 +42,8 @@ export default function ProgressBar() {
 
   return (
     <div className={classes.root}>
-      <LinearProgress variant="determinate" value={progress} />
+      <LinearProgress variant="determinate" value={progress} className={classes.progbar} />
     </div>
   );
 }
 
-/* Demonstration of how in a functional component, state and component lifecycle processes are implemented */

@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -96,7 +95,7 @@ export default function Navigation(props) {
                             </IconButton>
                         </Tooltip>
                         <Tooltip title="Resume">
-                            <IconButton aria-label="Resume">
+                            <IconButton aria-label="Resume" href="https://drive.google.com/file/d/186KRoLbtOP6klMwWieGfxGTdEvEmUnIj/view?usp=sharing">
                                 <AssignmentIcon style={{color:theme.palette.secondary.icons}} />
                             </IconButton>
                         </Tooltip>
@@ -145,9 +144,3 @@ export default function Navigation(props) {
         </div>
     );
 }
-
-
-/*Demonstartion of using Themeprovider in an app. 6 palettes of colours are available to use (primary,secondary,error,warning,info
-and success), out of which we used secondary in appbar. To override <Themeprovider> colors we can manually set color to any value
-we like, like in icons here.
-*/
